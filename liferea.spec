@@ -1,6 +1,6 @@
 Name:           liferea
-Version:        1.7.5
-Release:        1%{?dist}
+Version:        1.7.6
+Release:        1%{?dist}.R
 Summary:        An RSS/RDF feed reader
 
 Group:          Applications/Internet
@@ -112,6 +112,9 @@ fi
 %{_datadir}/applications/fedora-%{name}.desktop
 
 %changelog
+* Fri Jul 08 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 1.7.6-1.R
+- update to 1.7.6
+
 * Tue May 31 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 1.7.5-1
 - update to 1.7.5
 
