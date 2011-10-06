@@ -1,21 +1,21 @@
 Name:           liferea
-Version:        1.7.6
-Release:        1%{?dist}.R
+Version:        1.8
+Release:        rc1.1%{?dist}.R
 Summary:        An RSS/RDF feed reader
 
 Group:          Applications/Internet
 License:        GPLv2+
 URL:            http://liferea.sourceforge.net/
-Source0:        %{name}-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
-Epoch:		1
+Source0:        http://downloads.sourceforge.net/project/%{name}/%{name}/%{version}/%{name}-%{version}-RC1.tar.gz
+Epoch:          1
 
 BuildRequires:  GConf2-devel
-BuildRequires:  libxml2-devel	
-BuildRequires:	libxslt-devel
-BuildRequires:	sqlite-devel
-BuildRequires:  webkitgtk-devel 
-BuildRequires:  intltool, libtool
+BuildRequires:  libxml2-devel
+BuildRequires:  libxslt-devel
+BuildRequires:  sqlite-devel
+BuildRequires:  webkitgtk-devel
+BuildRequires:  intltool
+BuildRequires:  libtool
 BuildRequires:  libglade2-devel
 BuildRequires:  desktop-file-utils
 BuildRequires:  libnotify-devel
@@ -23,14 +23,14 @@ BuildRequires:  lua-devel
 BuildRequires:  libSM-devel
 BuildRequires:  dbus-devel
 BuildRequires:  NetworkManager-glib-devel
-BuildRequires:	json-glib-devel
-BuildRequires:	unique-devel
+BuildRequires:  json-glib-devel
+BuildRequires:  unique-devel
 
-Requires: 	sqlite
+Requires:       sqlite
 
-Requires(pre): 	GConf2
+Requires(pre):  GConf2
 Requires(post): GConf2
-Requires(preun): GConf2
+Requires(preun):GConf2
 
 Obsoletes: liferea-WebKit < 1.6.0
 
@@ -41,7 +41,7 @@ It can be used to maintain a list of subscribed feeds,
 browse through their items, and show their contents.
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q -n %{name}-%{version}-RC1
 
 %build
 #autoreconf -f -i
