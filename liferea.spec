@@ -6,7 +6,7 @@ Summary:        An RSS/RDF feed reader
 Group:          Applications/Internet
 License:        GPLv2+
 URL:            http://liferea.sourceforge.net/
-Source0:        http://downloads.sourceforge.net/project/%{name}/%{name}/%{version}/%{name}-%{version}-RC1.tar.gz
+Source0:        http://downloads.sourceforge.net/project/liferea/Liferea%20Unstable/1.8-RC1/liferea-1.8-RC1.tar.gz
 Epoch:          1
 
 BuildRequires:  GConf2-devel
@@ -112,6 +112,9 @@ fi
 %{_datadir}/applications/fedora-%{name}.desktop
 
 %changelog
+* Fri Oct 07 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 1.8-rc1.1.R
+- update to 1.8-RC1
+
 * Fri Jul 08 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 1.7.6-1.R
 - update to 1.7.6
 
