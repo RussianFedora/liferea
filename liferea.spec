@@ -19,10 +19,10 @@ BuildRequires:  libtool
 BuildRequires:  libglade2-devel
 BuildRequires:  desktop-file-utils
 BuildRequires:  libnotify-devel
-BuildRequires:  lua-devel
+#BuildRequires:  lua-devel
 BuildRequires:  libSM-devel
 BuildRequires:  dbus-devel
-BuildRequires:  NetworkManager-glib-devel
+#BuildRequires:  NetworkManager-glib-devel
 BuildRequires:  json-glib-devel
 BuildRequires:  unique-devel
 
@@ -46,7 +46,7 @@ browse through their items, and show their contents.
 %build
 #autoreconf -f -i
 #libtoolize -f -i
-%configure  --enable-nm  --enable-libnotify  --enable-lua
+%configure
 make %{?_smp_mflags}
 
 %install
