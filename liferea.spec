@@ -6,7 +6,7 @@ Summary:        An RSS/RDF feed reader
 Group:          Applications/Internet
 License:        GPLv2+
 URL:            http://liferea.sourceforge.net/
-Source0:        http://downloads.sourceforge.net/project/liferea/Liferea%20Unstable/1.8-RC1/liferea-1.8-RC1.tar.gz
+Source0:        http://downloads.sourceforge.net/project/liferea/Liferea\ Unstable/1.8-RC1/liferea-1.8-RC1.tar.gz
 Epoch:          1
 
 BuildRequires:  GConf2-devel
