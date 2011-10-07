@@ -19,10 +19,8 @@ BuildRequires:  libtool
 BuildRequires:  libglade2-devel
 BuildRequires:  desktop-file-utils
 BuildRequires:  libnotify-devel
-#BuildRequires:  lua-devel
 BuildRequires:  libSM-devel
 BuildRequires:  dbus-devel
-#BuildRequires:  NetworkManager-glib-devel
 BuildRequires:  json-glib-devel
 BuildRequires:  unique-devel
 
