@@ -1,12 +1,12 @@
 Name:           liferea
-Version:        1.8
-Release:        rc1.1%{?dist}.R
+Version:        1.8.0
+Release:        1%{?dist}.R
 Summary:        An RSS/RDF feed reader
 
 Group:          Applications/Internet
 License:        GPLv2+
 URL:            http://liferea.sourceforge.net/
-Source0:        http://downloads.sourceforge.net/project/liferea/Liferea Unstable/1.8-RC1/liferea-1.8-RC1.tar.gz
+Source0:        http://downloads.sourceforge.net/project/liferea/Liferea%20Stable/%{version}/%{name}-%{version}.tar.gz
 Epoch:          1
 
 BuildRequires:  GConf2-devel
@@ -39,11 +39,9 @@ It can be used to maintain a list of subscribed feeds,
 browse through their items, and show their contents.
 
 %prep
-%setup -q -n %{name}-%{version}-RC1
+%setup -q
 
 %build
-#autoreconf -f -i
-#libtoolize -f -i
 %configure
 make %{?_smp_mflags}
 
@@ -110,6 +108,9 @@ fi
 %{_datadir}/applications/fedora-%{name}.desktop
 
 %changelog
+* Tue Dec 15 2011 Arkady L. Shane <ashejn@russianfedora.ru> - 1.8.0-1.R
+- update to 1.8.0
+
 * Fri Oct 07 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 1.8-rc1.1.R
 - update to 1.8-RC1
 
